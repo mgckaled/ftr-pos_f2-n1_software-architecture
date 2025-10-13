@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esquemas Visuais: Domínio em DDD</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🎨 O Domínio em DDD - Esquemas Visuais</h1>
+        <p>6 Visualizações Interativas para Compreender o Conceito de Domínio</p>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="active" onclick="mostrarDiagrama(0)">1. Estrutura Básica</button>
+        <button onclick="mostrarDiagrama(1)">2. Subdomínios</button>
+        <button onclick="mostrarDiagrama(2)">3. Camadas</button>
+        <button onclick="mostrarDiagrama(3)">4. Domínio vs Tecnologia</button>
+        <button onclick="mostrarDiagrama(4)">5. Contextos Múltiplos</button>
+        <button onclick="mostrarDiagrama(5)">6. Evolução</button>
+      </div>
+
+      <div class="content">
+        <!-- DIAGRAMA 1: Estrutura Básica -->
+        <div class="diagram-section active" id="diagrama0">
+          <h2>1️⃣ Estrutura Básica do Domínio</h2>
+          <p>Como o mundo real se transforma em código através da modelagem de domínio</p>
+
+          <img src="./assets/images/1_estrutura-basica.svg" alt="Imagem de estrutura básica" />
+
+          <div class="legend">
+            <strong>💡 Conceito-chave:</strong> O domínio não é sobre tecnologia. É sobre compreender o problema que
+            você está resolvendo.
+          </div>
+        </div>
+
+        <!-- DIAGRAMA 2: Subdomínios -->
+        <div class="diagram-section" id="diagrama1">
+          <h2>2️⃣ Subdomínios de um E-commerce</h2>
+          <p>Um domínio grande é dividido em subdomínios com responsabilidades específicas</p>
+
+          <img src="./assets/images/2_subdominios.svg" alt="Imagem de subdomínios" />
+
+          <div class="legend">
+            <strong>💡 Insight:</strong> Diferentes subdomínios recebem investimento diferente. Core Domain merece
+            melhor arquitetura e testes.
+          </div>
+        </div>
+
+        <!-- DIAGRAMA 3: Camadas -->
+        <div class="diagram-section" id="diagrama2">
+          <h2>3️⃣ Camadas de Compreensão do Domínio</h2>
+          <p>Um domínio é composto por diferentes camadas de conhecimento que precisam ser extraídas</p>
+
+          <img src="./assets/images/3_camadas.svg" alt="Imagem de camadas" />
+
+          <div class="legend">
+            <strong>🎯 Ação:</strong> Use Event Storming e conversas estruturadas para extrair todas as camadas de
+            conhecimento.
+          </div>
+        </div>
+
+        <!-- DIAGRAMA 4: Domínio vs Tecnologia -->
+        <div class="diagram-section" id="diagrama3">
+          <h2>4️⃣ Separação Crítica: Domínio vs Tecnologia</h2>
+          <p>A estrutura do código deve refletir o domínio, NUNCA a tecnologia</p>
+
+          <img src="./assets/images/4_dom-vs-tech.svg" alt="Imagem de domínio vs tecnologia" />
+
+          <div class="legend">
+            <strong>🔑 Regra de Ouro:</strong> Organize por DOMÍNIO, não por camadas técnicas. Tecnologia fica em
+            "infra", jamais no núcleo.
+          </div>
+        </div>
+
+        <!-- DIAGRAMA 5: Contextos Múltiplos -->
+        <div class="diagram-section" id="diagrama4">
+          <h2>5️⃣ A Mesma Palavra em Contextos Diferentes</h2>
+          <p>A palavra "Pedido" significa coisas completamente diferentes em cada bounded context</p>
+
+          <img src="./assets/images/5_contexto.svg" alt="Imagem de contextos múltiplos" />
+
+          <div class="legend">
+            <strong>💡 Conclusão:</strong> DDD reconhece isso e permite que cada bounded context tenha seu próprio
+            modelo. Sem isso, confusão total!
+          </div>
+        </div>
+
+        <!-- DIAGRAMA 6: Evolução -->
+        <div class="diagram-section" id="diagrama5">
+          <h2>6️⃣ Evolução: Como o Domínio Muda com o Tempo</h2>
+          <p>O domínio não é estático. Evolui conforme aprendemos mais sobre o negócio</p>
+
+          <img src="./assets/images/6_evolucao.svg" alt="Imagem de evolução" />
+
+          <div class="legend">
+            <strong>📊 Timeline:</strong> Semana 1 = Ignorância → Semanas 2-4 = Descoberta → Semana 4+ = Maturidade →
+            Sempre = Evolução
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          🎓 Esquemas Visuais Interativos para Domain-Driven Design | Clique nos botões acima para explorar cada
+          conceito
+        </p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
