@@ -1,5 +1,7 @@
 # O Domínio em Domain-Driven Design: Um Aprofundamento Completo
 
+> [Voltar](../../../README.md)
+
 ## Índice
 
 - [O Domínio em Domain-Driven Design: Um Aprofundamento Completo](#o-domínio-em-domain-driven-design-um-aprofundamento-completo)
@@ -12,19 +14,19 @@
     - [Camada 3: Conhecimento Tácito](#camada-3-conhecimento-tácito)
   - [Nível 3: Estrutura de um Domínio Complexo](#nível-3-estrutura-de-um-domínio-complexo)
     - [Subdomínios também têm Classificação](#subdomínios-também-têm-classificação)
-  - [🧠 Nível 4: Por Que o Domínio é Crítico em DDD](#-nível-4-por-que-o-domínio-é-crítico-em-ddd)
+  - [Nível 4: Por Que o Domínio é Crítico em DDD](#nível-4-por-que-o-domínio-é-crítico-em-ddd)
     - [O Problema: Código Desacoplado do Domínio](#o-problema-código-desacoplado-do-domínio)
     - [A Solução: Código Que É O Domínio](#a-solução-código-que-é-o-domínio)
-  - [🔍 Nível 5: Domínio vs Tecnologia](#-nível-5-domínio-vs-tecnologia)
+  - [Nível 5: Domínio vs Tecnologia](#nível-5-domínio-vs-tecnologia)
     - [O Grande Erro: Confundir Domínio com Tecnologia](#o-grande-erro-confundir-domínio-com-tecnologia)
-  - [🎬 Nível 6: Descoberta do Domínio](#-nível-6-descoberta-do-domínio)
+  - [Nível 6: Descoberta do Domínio](#nível-6-descoberta-do-domínio)
     - [Técnica 1: Event Storming](#técnica-1-event-storming)
     - [Técnica 2: Mapeamento de Linguagem Ubíqua](#técnica-2-mapeamento-de-linguagem-ubíqua)
   - [Nível 7: Dinâmica do Domínio](#nível-7-dinâmica-do-domínio)
     - [Fase 1: Ignorância](#fase-1-ignorância)
     - [Fase 2: Descoberta](#fase-2-descoberta)
     - [Fase 3: Maturidade](#fase-3-maturidade)
-  - [🌊 Nível 8: Camadas de Compreensão do Domínio](#-nível-8-camadas-de-compreensão-do-domínio)
+  - [Nível 8: Camadas de Compreensão do Domínio](#nível-8-camadas-de-compreensão-do-domínio)
   - [Nível 9: Erros Comuns na Interpretação do Domínio](#nível-9-erros-comuns-na-interpretação-do-domínio)
     - [Erro 1: Confundir Domínio com Requisitos Técnicos](#erro-1-confundir-domínio-com-requisitos-técnicos)
     - [Erro 2: Copiar Domínio de Outro Projeto](#erro-2-copiar-domínio-de-outro-projeto)
@@ -45,7 +47,7 @@
   - [Conclusão: Recapitulando o Porquê](#conclusão-recapitulando-o-porquê)
   - [Próximos Passos para Dominar o Domínio](#próximos-passos-para-dominar-o-domínio)
   - [Recursos Finais](#recursos-finais)
-  - [✨ Últimas Reflexões](#-últimas-reflexões)
+  - [Últimas Reflexões](#últimas-reflexões)
 
 ## O Que é "Domínio" Afinal?
 
@@ -70,14 +72,14 @@ Deixe-me guiar você através de uma exploração progressiva.
 │  - Pagamentos são processados       │
 │  - Entregas são feitas              │
 │                                     │
-│  Tudo isso EXISTE antes do código! │
+│  Tudo isso EXISTE antes do código!  │
 └─────────────────────────────────────┘
          ↓
     Modelamos isso
     em Software
          ↓
 ┌─────────────────────────────────────┐
-│    CÓDIGO QUE REFLETE O DOMÍNIO    │
+│    CÓDIGO QUE REFLETE O DOMÍNIO     │
 │                                     │
 │  class Pedido { ... }               │
 │  class Estoque { ... }              │
@@ -242,7 +244,7 @@ Grandes domínios não são monolíticos. Eles são compostos por **Sub-Domínio
 
 ---
 
-## 🧠 Nível 4: Por Que o Domínio é Crítico em DDD
+## Nível 4: Por Que o Domínio é Crítico em DDD
 
 ### O Problema: Código Desacoplado do Domínio
 
@@ -355,13 +357,13 @@ class Pedido {
 
 ---
 
-## 🔍 Nível 5: Domínio vs Tecnologia
+## Nível 5: Domínio vs Tecnologia
 
 Esta é uma distinção CRÍTICA que separa DDD de desenvolvimento comum.
 
 ### O Grande Erro: Confundir Domínio com Tecnologia
 
-```typescript
+```plaixtext
 // ❌ ERRADO: Pensar em "camadas tecnológicas" como domínio
 
 // Estrutura comum (MVC, Camadas)
@@ -424,7 +426,7 @@ projeto/
 
 ---
 
-## 🎬 Nível 6: Descoberta do Domínio
+## Nível 6: Descoberta do Domínio
 
 Como você **descobre** o domínio real? O domínio não é entregue em documento. Deve ser **explorado**.
 
@@ -566,13 +568,13 @@ Dev: "Perfeito, vou modelar isso"
 
 ---
 
-## 🌊 Nível 8: Camadas de Compreensão do Domínio
+## Nível 8: Camadas de Compreensão do Domínio
 
 ```plaintext
 ┌────────────────────────────────────────────────────┐
 │  ESPECIALISTA DE NEGÓCIO                           │
-│  "Pedido, Cliente, Produto, Estoque, Envio..."    │
-│  (Fala em conceitos de negócio)                   │
+│  "Pedido, Cliente, Produto, Estoque, Envio..."     │
+│  (Fala em conceitos de negócio)                    │
 └──────────────┬─────────────────────────────────────┘
                │
         Linguagem Ubíqua
@@ -580,24 +582,24 @@ Dev: "Perfeito, vou modelar isso"
                │
 ┌──────────────▼─────────────────────────────────────┐
 │  ARQUITETO / DDD EXPERT                            │
-│  "Agregados, Value Objects, Eventos, Repositórios"│
-│  (Fala em padrões tácticos DDD)                   │
+│  "Agregados, Value Objects, Eventos, Repositórios" │
+│  (Fala em padrões tácticos DDD)                    │
 └──────────────┬─────────────────────────────────────┘
                │
         Mapeamento Mental
                │
 ┌──────────────▼─────────────────────────────────────┐
 │  DESENVOLVEDOR                                     │
-│  "Classes, Interfaces, Métodos, Testes"          │
-│  (Fala em TypeScript/OOP)                        │
+│  "Classes, Interfaces, Métodos, Testes"            │
+│  (Fala em TypeScript/OOP)                          │
 └──────────────┬─────────────────────────────────────┘
                │
         Compilação/Execução
                │
 ┌──────────────▼─────────────────────────────────────┐
 │  MÁQUINA                                           │
-│  "Bytes, CPU, Memória"                            │
-│  (0s e 1s)                                        │
+│  "Bytes, CPU, Memória"                             │
+│  (0s e 1s)                                         │
 └────────────────────────────────────────────────────┘
 
 Todo esse caminho deve estar ALINHADO.
@@ -779,38 +781,38 @@ Cada entidade:
 Quando subdomínios precisam se comunicar, há padrões:
 
 1. PARTNERSHIP (Parceria)
-   ┌──────────────┐         ┌──────────────┐
-   │   VENDAS     │ ←────→  │   ESTOQUE    │
-   │ (Conhecem    │ Ambos   │ (Conhecem    │
+   ┌──────────────┐          ┌──────────────┐
+   │   VENDAS     │ ← ──── → │   ESTOQUE    │
+   │ (Conhecem    │ Ambos    │ (Conhecem    │
    │  conceitos   │ precisam │  conceitos   │
    │  iguais)     │ de sinc. │  iguais)     │
-   └──────────────┘         └──────────────┘
+   └──────────────┘          └──────────────┘
    Problema: Acoplamento forte, difícil de evoluir separadamente
 
 2. CUSTOMER-SUPPLIER (Cliente-Fornecedor)
-   ┌──────────────┐         ┌──────────────┐
-   │   VENDAS     │ ─────→  │   ESTOQUE    │
-   │ (Consumidor  │ Define  │ (Fornecedor  │
+   ┌──────────────┐          ┌──────────────┐
+   │   VENDAS     │ ─────→   │   ESTOQUE    │
+   │ (Consumidor  │ Define   │ (Fornecedor  │
    │  de serviço) │ contrato │  de serviço) │
-   └──────────────┘         └──────────────┘
+   └──────────────┘          └──────────────┘
    Benefício: ESTOQUE controla sua interface, VENDAS se adapta
 
 3. SHARED KERNEL (Núcleo Compartilhado)
-   ┌──────────────┐     ┌──────────────┐
-   │   VENDAS     │ ←──→│ SHARED CODE  │
-   │              │     │ (Value       │
-   │   ESTOQUE    │ ←──→│  Objects     │
-   │              │     │  Comuns)     │
-   └──────────────┘     └──────────────┘
+   ┌──────────────┐      ┌──────────────┐
+   │   VENDAS     │ ←──→ │ SHARED CODE  │
+   │              │      │ (Value       │
+   │   ESTOQUE    │ ←──→ │  Objects     │
+   │              │      │  Comuns)     │
+   └──────────────┘      └──────────────┘
    Risco: Mudança no código compartilhado afeta todos
 
 4. ANTI-CORRUPTION LAYER (ACL - Camada Anti-Corrupção)
-   ┌──────────────┐     ┌────────────┐     ┌──────────────┐
-   │ NOVO DOMÍNIO │ ←──→│    ACL     │ ←──→│ SISTEMA      │
-   │ (Nosso       │     │(Tradução)  │     │ LEGADO       │
-   │ domínio puro)│     │            │     │ (Domínio     │
-   └──────────────┘     └────────────┘     │ confuso)     │
-                                           └──────────────┘
+   ┌──────────────┐      ┌────────────┐      ┌──────────────┐
+   │ NOVO DOMÍNIO │ ←──→ │    ACL     │ ←──→ │ SISTEMA      │
+   │ (Nosso       │      │(Tradução)  │      │ LEGADO       │
+   │ domínio puro)│      │            │      │ (Domínio     │
+   └──────────────┘      └────────────┘      │ confuso)     │
+                                             └──────────────┘
    Benefício: Domínio novo protegido de "sujeira" legada
 ```
 
@@ -1344,7 +1346,7 @@ describe('Domínio: Sala de Reuniões', () => {
 
 ```plaintext
 ┌─────────────────────────────────────────────────────────────┐
-│     POR QUE O DOMÍNIO É O PILAR CENTRAL DE DDD             │
+│     POR QUE O DOMÍNIO É O PILAR CENTRAL DE DDD              │
 └─────────────────────────────────────────────────────────────┘
 
 1. COMUNICAÇÃO
@@ -1403,7 +1405,7 @@ Esse investimento se paga 100 vezes.
 
 ## Próximos Passos para Dominar o Domínio
 
-```typescript
+```plaintext
 HOJE (Compreensão)
 ├─ Ler este documento
 ├─ Dialogar com especialista de negócio
@@ -1446,9 +1448,9 @@ PERMANENTE (Evangelismo)
 
 ---
 
-## ✨ Últimas Reflexões
+## Últimas Reflexões
 
->[!note]
+>[!NOTE]
 > "O código é a manifestação física do seu conhecimento sobre o domínio.
 > Se o domínio está confuso, o código será confuso.
 > Se o domínio é claro, o código será claro."

@@ -1,11 +1,13 @@
 # Comunicação Eficiente em DDD: Um Pilar Essencial
 
+> [Voltar](../../../README.md)
+
 ## Índice
 
 - [Comunicação Eficiente em DDD: Um Pilar Essencial](#comunicação-eficiente-em-ddd-um-pilar-essencial)
   - [Índice](#índice)
   - [O Que é Comunicação Eficiente em DDD?](#o-que-é-comunicação-eficiente-em-ddd)
-  - [🗣️ Dimensão 1: Comunicação Humana](#️-dimensão-1-comunicação-humana)
+  - [Dimensão 1: Comunicação Humana](#dimensão-1-comunicação-humana)
     - [A Linguagem Ubíqua Revisitada](#a-linguagem-ubíqua-revisitada)
       - [O Problema Clássico](#o-problema-clássico)
       - [A Solução DDD](#a-solução-ddd)
@@ -13,7 +15,7 @@
       - [1. Event Storming](#1-event-storming)
       - [2. Glossário de Domínio](#2-glossário-de-domínio)
       - [3. Conversas Estruturadas](#3-conversas-estruturadas)
-  - [🔗 Dimensão 2: Comunicação de Sistemas](#-dimensão-2-comunicação-de-sistemas)
+  - [Dimensão 2: Comunicação de Sistemas](#dimensão-2-comunicação-de-sistemas)
     - [1. Síncrono com RPC/HTTP](#1-síncrono-com-rpchttp)
     - [2. Assíncrono com Events (Melhor Padrão)](#2-assíncrono-com-events-melhor-padrão)
     - [3. Saga Pattern (Para Transações Distribuídas)](#3-saga-pattern-para-transações-distribuídas)
@@ -46,7 +48,7 @@ Ambas devem estar alinhadas. A comunicação humana deficiente resulta em códig
 
 ---
 
-## 🗣️ Dimensão 1: Comunicação Humana
+## Dimensão 1: Comunicação Humana
 
 ### A Linguagem Ubíqua Revisitada
 
@@ -117,7 +119,7 @@ Exemplo (E-commerce):
 
 Timeline:
 ┌─────────────────────────────────────────┐
-│ Cliente Adicionou Item ao Carrinho     │
+│ Cliente Adicionou Item ao Carrinho      │
 │           ↓                             │
 │ Cliente Confirmou Pedido                │
 │           ↓                             │
@@ -214,7 +216,7 @@ class Pedido {
 
 ---
 
-## 🔗 Dimensão 2: Comunicação de Sistemas
+## Dimensão 2: Comunicação de Sistemas
 
 Quando múltiplos bounded contexts precisam se comunicar, devemos escolher o padrão adequado.
 
@@ -526,9 +528,9 @@ Context Map de um E-commerce:
 
 ┌─────────────────────────────────────────────────────────────────┐
 │                        VENDAS (Core Domain)                     │
-│  Responsável por: Criar pedidos, gerenciar carrinho            │
-│  Publica: PedidoConfirmado, ClienteRegistrado                  │
-│  Escuta: PagamentoProcessado, EstoqueReservado                 │
+│  Responsável por: Criar pedidos, gerenciar carrinho             │
+│  Publica: PedidoConfirmado, ClienteRegistrado                   │
+│  Escuta: PagamentoProcessado, EstoqueReservado                  │
 └─────────────────────────────────────────────────────────────────┘
                               ↕ (Assíncrono)
          ┌────────────────────┴────────────────────┐
@@ -543,7 +545,7 @@ Context Map de um E-commerce:
     - ProdutoAdicionado                     - ReembolsoProcessado
 
 ┌─────────────────────────────────────────────────────────────────┐
-│                    NOTIFICAÇÃO (Supporting)                      │
+│                    NOTIFICAÇÃO (Supporting)                     │
 │  Ouve eventos de outros contextos                               │
 │  Independente - não afeta fluxo crítico                         │
 └─────────────────────────────────────────────────────────────────┘

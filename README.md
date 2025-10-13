@@ -2,7 +2,7 @@
 <!-- markdownlint-disable MD041 -->
 
 <p align="center">
-  <img alt="Logo - Rocketseat" src="./.github/assets/logo_ftr.png" width="225px" />
+  <img alt="Logo - Rocketseat" src="./.github/assets/logo/logo_ftr.png" width="200px" />
 </p>
 
 # Arquitetura de Software
@@ -35,6 +35,7 @@ Repositório pessoal de registro, referência e suporte para fins de aprendizado
 **Domain-Driven Design (DDD)** é uma abordagem de desenvolvimento de software proposta por Eric Evans que foca em colocar o **domínio do negócio** no centro do processo de modelagem e implementação. Em vez de priorizar apenas aspectos técnicos, o DDD busca compreender profundamente as regras, processos e linguagem do domínio para construir sistemas mais expressivos, coesos e alinhados às necessidades reais da organização. Ele promove uma colaboração constante entre desenvolvedores e especialistas do negócio, incentivando o uso de uma **linguagem ubíqua** e a divisão do sistema em **contextos delimitados (bounded contexts)**, o que facilita a manutenção, evolução e escalabilidade de soluções complexas.
 
 - [Domain-Driven Design (DDD): Uma Introdução Completa](./.github/docs/content/1_introduction.md)
+- [Artigo para leitura: DDD — Domain-Driven Design](https://flaviorl.medium.com/ddd-domain-driven-design-295abc44a9a0)
 
 ### Conceitos Fundamentais
 
@@ -49,9 +50,13 @@ Em **Domain-Driven Design (DDD)**, a **comunicação eficiente** é essencial pa
 
 A **Arquitetura em Camadas** é uma das formas mais tradicionais de estruturar aplicações para isolar o domínio. Nessa abordagem, o sistema é dividido em níveis hierárquicos, geralmente compostos por camadas como **apresentação**, **aplicação**, **domínio** e **infraestrutura**. O principal objetivo é garantir que o **coração da aplicação**, representado pela camada de domínio, permaneça independente de detalhes técnicos, frameworks ou bancos de dados. Assim, as regras de negócio são encapsuladas em entidades, agregados e serviços de domínio, enquanto as outras camadas lidam com aspectos externos, como comunicação com APIs, persistência de dados e interface do usuário. Essa separação reduz o acoplamento e facilita testes, manutenção e evolução do código ao longo do tempo.
 
+- [Isolando o Domínio com Arquitetura em Camadas](./.github/docs/content/4_layers_architecture.md)
+
 #### Isolando o Domínio com Arquitetura Hexagonal
 
 A **Arquitetura Hexagonal**, também conhecida como **Ports and Adapters**, expande o conceito de isolamento do domínio ao eliminar a dependência de camadas rígidas e propor um modelo baseado em **interfaces de comunicação**. O domínio torna-se o núcleo da aplicação, cercado por portas (ports) que definem como ele se comunica com o mundo externo, e adaptadores (adapters) que implementam essas interfaces para tecnologias específicas, como bancos de dados, filas de mensagens ou APIs. Essa estrutura permite que o domínio funcione de forma completamente independente de infraestrutura, possibilitando a substituição de componentes externos sem alterar a lógica central. O resultado é um sistema mais flexível, testável e resiliente a mudanças tecnológicas, mantendo o foco no comportamento e nas regras do negócio.
+
+- [Isolando o Domínio com Arquitetura Hexagonal](./)
 
 ### Entidades e Objetos e Objetos de Valor
 

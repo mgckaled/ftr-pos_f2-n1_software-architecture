@@ -1,4 +1,9 @@
+<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD041 -->
+
 # Domain-Driven Design (DDD): Uma Introdução Completa
+
+> [Voltar](../../../README.md)
 
 ## Índice
 
@@ -31,7 +36,7 @@
     - [Anti-Padrões Comuns](#anti-padrões-comuns)
     - [Boas Práticas](#boas-práticas)
   - [Próximos Passos](#próximos-passos)
-  - [ecursos Recomendados](#ecursos-recomendados)
+  - [Recursos Recomendados](#recursos-recomendados)
 
 ## Explicações em Diferentes Níveis
 
@@ -68,6 +73,10 @@ Taticamente, implementamos através de agregados imutáveis, value objects, doma
 
 Domain-Driven Design é um paradigma que propõe colocar a complexidade do negócio (domínio) no centro do design de software. Desenvolvido por Eric Evans em 2003, DDD oferece uma abordagem sistemática para construir sistemas que evoluem com os requisitos do negócio.
 
+<p align="center">
+  <img alt="Imagem do Livro de Eric Evans (DDD)" src="../../assets/images/1_uDGZ65jFz8ep5oSvBJp6Nw.webp" width="30%" />
+</p>
+
 ### Por que DDD importa?
 
 Muitos projetos fracassam porque:
@@ -78,6 +87,10 @@ Muitos projetos fracassam porque:
 - A arquitetura não reflete a estrutura organizacional
 
 DDD resolve isso estabelecendo uma ponte entre negócio e código através de conceitos bem definidos.
+
+<p align="center">
+  <img alt="Imagem do Livro de Eric Evans (DDD)" src="../../assets/images/292f3b60-c96a-4d5e-962b-408cef38750c_2250x2862.webp" width="40%" />
+</p>
 
 ---
 
@@ -92,6 +105,16 @@ DDD resolve isso estabelecendo uma ponte entre negócio e código através de co
 - "Pedido" é diferente de "Carrinho"
 - "Cancelamento" é diferente de "Devolução"
 - "Estoque" é diferente de "Inventário"
+
+<p align="center">
+  <img alt="Imagem do Livro de Eric Evans (DDD)" src="../../assets/images/1_Ct8SHmvV4mncD39d9I4D2A.webp" width="45%" />
+</p>
+
+<br>
+
+<p align="center">
+  <img alt="Imagem do Livro de Eric Evans (DDD)" src="../../assets/images/1_yUnoZc0409WkF6K2gn9eTw.webp" width="45%" />
+</p>
 
 ### 2. Bounded Context
 
@@ -625,7 +648,7 @@ class Pedido {
 
 ---
 
-## ecursos Recomendados
+## Recursos Recomendados
 
 - **Livro**: "Domain-Driven Design" - Eric Evans (livro azul)
 - **Livro**: "Implementing Domain-Driven Design" - Vaughn Vernon
