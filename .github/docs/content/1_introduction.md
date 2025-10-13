@@ -89,7 +89,7 @@ Muitos projetos fracassam porque:
 DDD resolve isso estabelecendo uma ponte entre negócio e código através de conceitos bem definidos.
 
 <p align="center">
-  <img alt="Imagem do Livro de Eric Evans (DDD)" src="../../assets/images/292f3b60-c96a-4d5e-962b-408cef38750c_2250x2862.webp" width="40%" />
+  <img alt="Cheatsheet DDD" src="../../assets/images/292f3b60-c96a-4d5e-962b-408cef38750c_2250x2862.webp" width="60%" />
 </p>
 
 ---
@@ -107,13 +107,13 @@ DDD resolve isso estabelecendo uma ponte entre negócio e código através de co
 - "Estoque" é diferente de "Inventário"
 
 <p align="center">
-  <img alt="Imagem do Livro de Eric Evans (DDD)" src="../../assets/images/1_Ct8SHmvV4mncD39d9I4D2A.webp" width="45%" />
+  <img alt="Ilustração sobre DDD" src="../../assets/images/1_Ct8SHmvV4mncD39d9I4D2A.webp" width="60%" />
 </p>
 
 <br>
 
 <p align="center">
-  <img alt="Imagem do Livro de Eric Evans (DDD)" src="../../assets/images/1_yUnoZc0409WkF6K2gn9eTw.webp" width="45%" />
+  <img alt="Ilustração sobre DD" src="../../assets/images/1_yUnoZc0409WkF6K2gn9eTw.webp" width="60%" />
 </p>
 
 ### 2. Bounded Context
@@ -127,7 +127,7 @@ Delimita as fronteiras onde a linguagem ubíqua se aplica. Diferentes contextos 
 
 ### 3. Agregado
 
-Um grupo de entidades e value objects que devem ser tratados como uma unidade coesa. O agregado tem uma raiz (Aggregate Root) que é o único ponto de entrada para modificar o agregado.
+Um grupo de _entidades_ e _value objects_ que devem ser tratados como uma unidade coesa. O agregado tem uma raiz (Aggregate Root) que é o único ponto de entrada para modificar o agregado.
 
 ### 4. Entity (Entidade)
 

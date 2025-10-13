@@ -171,7 +171,7 @@ Timeline:
 
 #### 3. Conversas Estruturadas
 
-```typescript
+```plaintext
 // ❌ ERRADO: Conversa vaga
 Developer: "Então o pedido pode ser cancelado?"
 Expert: "Sim... tipo... tem situações que sim, outras não"
@@ -218,7 +218,7 @@ class Pedido {
 
 ## Dimensão 2: Comunicação de Sistemas
 
-Quando múltiplos bounded contexts precisam se comunicar, devemos escolher o padrão adequado.
+Quando múltiplos _bounded contexts_ precisam se comunicar, devemos escolher o padrão adequado.
 
 ### 1. Síncrono com RPC/HTTP
 
@@ -261,7 +261,7 @@ class CriarPedidoService {
 
 ### 2. Assíncrono com Events (Melhor Padrão)
 
-**Quando usar**: Contextos independentes, eventual consistency é aceitável, resiliência.
+**Quando usar**: Contextos independentes, _eventual consistency_ é aceitável, resiliência.
 
 ```typescript
 // Contexto: Vendas
