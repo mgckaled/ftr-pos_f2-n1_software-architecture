@@ -66,6 +66,7 @@ A **Arquitetura em Camadas** é uma das formas mais tradicionais de estruturar a
 A **Arquitetura Hexagonal**, também conhecida como **Ports and Adapters**, expande o conceito de isolamento do domínio ao eliminar a dependência de camadas rígidas e propor um modelo baseado em **interfaces de comunicação**. O domínio torna-se o núcleo da aplicação, cercado por portas (ports) que definem como ele se comunica com o mundo externo, e adaptadores (adapters) que implementam essas interfaces para tecnologias específicas, como bancos de dados, filas de mensagens ou APIs. Essa estrutura permite que o domínio funcione de forma completamente independente de infraestrutura, possibilitando a substituição de componentes externos sem alterar a lógica central. O resultado é um sistema mais flexível, testável e resiliente a mudanças tecnológicas, mantendo o foco no comportamento e nas regras do negócio.
 
 - [Isolando o Domínio com Arquitetura Hexagonal](./.github/docs/content/5_hexagonal-architecture.md)
+- Complemento: [Guia de Arquitetura DDD e Hexagonal (Sistemas de Pagamento)](./.github/docs/content/a_ddd_hexagonal.md)
 
 ### Isolando o Domínio com Arquitetura de Microsserviços
 
