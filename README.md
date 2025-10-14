@@ -69,6 +69,8 @@ A **Arquitetura Hexagonal**, também conhecida como **Ports and Adapters**, expa
 
 ### Isolando o Domínio com Arquitetura de Microsserviços
 
+Dentro do contexto do Domain-Driven Design (DDD), isolar o domínio por meio de uma arquitetura de microsserviços permite que cada serviço represente de forma autônoma um **contexto delimitado** (Bounded Context), preservando as regras de negócio e a lógica específica de cada subdomínio. Essa separação evita o acoplamento excessivo entre módulos e facilita a evolução independente dos serviços, já que cada um possui seu próprio modelo de domínio, banco de dados e ciclo de implantação. Dessa forma, alterações em um serviço não impactam diretamente os demais, favorecendo a escalabilidade, a manutenção e a clareza conceitual do sistema. O isolamento do domínio, portanto, garante que o design de cada microsserviço permaneça fiel à linguagem ubíqua e aos princípios do DDD, reforçando a coesão interna e a integridade das regras de negócio.
+
 - [Isolando o Domínio com Arquitetura Microsserviços](./.github/docs/content/6_microsservices-architecture.md)
 
 ---
