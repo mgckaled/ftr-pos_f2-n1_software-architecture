@@ -33,7 +33,7 @@ Repositório pessoal de registro, referência e suporte para fins de aprendizado
 >[!NOTE]
 > [Questionário Avaliativo](./.github/docs/assessments/q.md)
 >
-> [Código fonte: Esquemas Visuais para estudos (DDD)](./project/)
+> [Conteúdo: Exemplos das Aulas - adaptado para Typescript](./src/)
 
 ## Introdução
 
